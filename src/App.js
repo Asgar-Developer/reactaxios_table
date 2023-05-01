@@ -1,8 +1,7 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 import TableComponent from "./TableComponent";
-import Table from "react-bootstrap/Table";
-
+import Intro from "./Intro";
 import axios from "axios";
 export default function App() {
   const [user, setUser] = useState([]);
@@ -18,6 +17,7 @@ export default function App() {
     <div className="App">
       <h1>Hello CodeSandbox</h1>
       <TableComponent user={user} />
+      <Intro name="Asgar Developer"/>
       {/* <table border="1px solid black">
         <tr>
           <td>User_Id</td>
